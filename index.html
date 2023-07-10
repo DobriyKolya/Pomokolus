@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pomokolya</title>
+</head>
+<body>
+<header>
+    <h1>Pomokolus</h1>
+</header>
+<main>
+    <div id="settings">
+        <div>
+            <label for="pomodoro-duration">Pomodoro:</label>
+            <input type="number" id="pomodoro-duration" min="1" max="60" value="25">
+        </div>
+        <div>
+            <label for="short-break-duration">Short break:</label>
+            <input type="number" id="short-break-duration" min="1" max="60" value="5">
+        </div>
+        <div>
+            <label for="long-break-duration">Long break:</label>
+            <input type="number" id="long-break-duration" min="1" max="60" value="15">
+        </div>
+    </div>
+
+    <div id="timer-container">
+        <div id="timer">25:00</div>
+        <h2 id="status-display"></h2>
+
+        <div class="actions">
+            <button id="start-btn">Start</button>
+            <button id="pause-btn">Pause</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+    </div>
+
+    <div id="task-list">
+        <h2>Tasks</h2>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Enter task description">
+            <button type="submit">Add Task</button>
+        </form>
+        <ol id="tasks">
+        </ol>
+    </div>
+</main>
+<script src="script.js"></script>
+
+
+</body>
+</html>
